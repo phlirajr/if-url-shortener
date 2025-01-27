@@ -28,9 +28,29 @@ body{
     @apply bg-vista.blue hover:bg-delft.blue text-delft.blue hover:text-vista.blue font-bold 
 }
 
+.btn-secondary{
+    @apply border-2 border-delft.blue hover:bg-delft.blue hover:text-saffron font-bold 
+}
+
 .heading{
-    background: linear-gradient(180deg, #1D2F6F 0%, rgba(125, 206, 175, 1) 189%);
+    background: linear-gradient(180deg, #1D2F6F 0%, rgba(125, 206, 175, 1) 200%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.card{
+    @apply min-w-[350px] bg-white/5 rounded-xl p-5 border border-delft.blue/30 
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+    @apply w-full py-2 px-2 bg-transparent border border-delft.blue/30 my-2 rounded-md text-black.mamba
+}
+
+form label{
+    @apply  text-delft.blue text-sm block font-bold
+}
+
+.form-group{
+    @apply mb-1
 }

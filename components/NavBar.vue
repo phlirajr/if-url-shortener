@@ -32,7 +32,15 @@
             </NuxtLink>
             <ul class="flex items-center gap-4">
                 <Li v-for="link in navLinks" :key="link.to"><NuxtLink :to="link.to">{{ link.label }}</NuxtLink></Li>
-                <li><NuxtLink to="/auth" class="btn btn-primary">Sign In</NuxtLink></li>
+                <li>
+                    <NuxtLink
+                        :to="{
+                            name:'auth',
+                        }"
+                        class="btn btn-primary">
+                        Sign In
+                    </NuxtLink>
+                </li>
             </ul>
         </nav>
     </div>
