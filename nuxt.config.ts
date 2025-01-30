@@ -14,5 +14,10 @@ export default defineNuxtConfig({
     redirect: false,
 
   },
+  runtimeConfig: {
+    public: {
+      appURL: process.env.APP_URL,
+    },
+  },
   modules: ["@nuxtjs/supabase"],
 });
